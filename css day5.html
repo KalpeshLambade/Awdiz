@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #top-cont {
+        border: 2px solid black;
+        height: 200px;
+        width: 100%;
+        padding: 50px;
+        margin: 0px 0px 10px 20px;
+      }
+      #top-cont > h1 {
+        color: red;
+      }
+
+      #top-cont > div {
+        border: 1px solid blue;
+      }
+      /* } // > sign indidicates the apply css property is only applicable for childern of the parent div not for grand children */
+    </style>
+  </head>
+  <body>
+    <div id="top-cont">
+      <div>
+        <h1>1</h1>
+        <div>2</div>
+      </div>
+
+      <div>3</div>
+      <h1>4</h1>
+    </div>
+  </body>
+</html>

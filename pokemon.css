@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  #mainDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  /* navbar section */
+  .navBar {
+    /* border: 1px solid red; */
+    background-color: #ffffff;
+    color: #898989;
+    width: 59%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 10px;
+    height: 110px;
+  }
+  .navBar > div {
+    /* border: 1px solid green; */
+    text-align: center;
+    width: 150px;
+    padding: 20px 5px 2px 5px;
+  }
+  h2,h3,h4 {
+    font-family: 'Roboto', sans-serif; 
+  }
+  h2{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight:450;
+  }
+  /* Navbar each div */
+  .navBar > div:first-child {
+    box-shadow: 0px 10px 8px #4c4c64;
+  }
+  .navBar > div:nth-child(2) {
+    box-shadow: 0px 10px 8px #e3350d;
+  }
+  .navBar > div:nth-child(3) {
+    box-shadow: 0px 10px 8px #ee6b2f;
+  }
+  .navBar > div:nth-child(4) {
+    box-shadow: 0px 10px 8px #e6bc2f;
+  }
+  .navBar > div:nth-child(5) {
+    box-shadow: 0px 10px 8px #4dad5b;
+  }
+  .navBar > div:nth-child(6) {
+    box-shadow: 0px 10px 8px #30a7d7;
+  }
+  /* Hover effect */
+  .navBar >div:hover{
+    cursor: pointer;
+  }
+  .navBar > div:first-child:hover {
+    background-color: #4c4c64;
+    color: #ffffff;
+  }
+  .navBar > div:nth-child(2):hover {
+    background-color: #e3350d;
+    color: #ffffff;
+  }
+  .navBar > div:nth-child(3):hover {
+    background-color: #ee6b2f;
+    color: #ffffff;
+  }
+  .navBar > div:nth-child(4):hover {
+    background-color: #e6bc2f;
+    color: #ffffff;
+  }
+  .navBar > div:nth-child(5):hover {
+    background-color: #4dad5b;
+    color: #ffffff;
+  }
+  .navBar > div:nth-child(6):hover {
+    background-color: #30a7d7;
+    color: #ffffff;
+  }
+  .content {
+    /* border: 1px solid blue; */
+    /* background-color: red; */
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/564x/e7/fc/72/e7fc72285b03f14bd1e79df2d431e9c8.jpg);
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 14px;
+  }
+  #contentLower{
+    /* border: 1px solid blue; */
+    width: 82%;
+    margin: auto;
+    height: 100vh;
+    box-sizing: border-box;
+    margin-top: 0;
+  }
+  #contentLeft,#contentRight{
+    /* border: 1px solid red; */
+    width: 9%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #434242;
+    opacity: 0.6;
+  }
+  #floatBubble{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: column wrap;
+    width: 5%;
+    position: fixed;
+    text-align: center;
+  }
+  /* #floatBubble >div{
+    border: 1px solid blue;
+  } */
+  
+/* Float bubble */
+  #floatBubble >div:first-child{
+    /* background-color: red; */
+    border-radius: 0 50% 0 0;
+  }
+  #floatBubble >div:nth-child(4){
+    height: 20px;
+    border-radius: 0 0 50% 0 ;
+    background-color:#323232;
+    border-bottom: 2px solid black;
+    border-right:2px solid black;
+  }
+ 
+
+
+  footer{
+    background-color: #1f1f1f;
+    color:#ffffff;
+  }
+  #footerBlock{
+    background-color: #1f1f1f;
+    display: flex;
+    flex-flow:row nowrap;
+    width:60%;
+    margin:auto;
+    height:35vh;
+  }
+  #footerBlock >div{
+    /* border: 1px solid white; */
+    width: 50%;
+    padding: 30px ;
+  }
+  #footerBlock >div:first-child >h3{
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-shadow: 3px 3px 10px red;
+  }
+  #footerBlock >div:first-child >h4{
+    padding:5px;
+    font-weight:500;
+  }
+  #footerBlock >div:nth-child(2){
+    border: 2px solid #FFFBF5;
+    border-top: none;
+    border-bottom: none;
+  }
+  #footerBlock >div:nth-child(2) >i{
+    padding:0 7px;
+  }
+  #footerBlock >div:nth-child(3){
+    font-size: large;
+  }
+
+  #footerBlock >div:nth-child(2) >i:first-child:hover{
+    color:#0014FF;
+  }
+  #footerBlock >div:nth-child(2) >i:nth-child(2):hover{
+    color:red;
+  }
+  #footerBlock >div:nth-child(2) >i:nth-child(3):hover{
+    color:skyblue;
+  }
+  #footerBlock >div:nth-child(2) >i:nth-child(4):hover{
+    color:#1C82AD;
+  }
+  #footerBlock >div:nth-child(2) >i:nth-child(5):hover{
+    color:palevioletred;
+  }

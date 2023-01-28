@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700&family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      #background-color {
+        position: relative;
+        display: flex;
+        z-index: 1;
+      }
+
+      #background-color > div:first-child, #background-color > div:nth-child(2){
+        width: 50%;
+        height: 100vh;
+      } 
+
+      #background-color > div:first-child {
+        background-color: #eca64e;
+      }
+
+      #background-color > div:nth-child(2) {
+        background-color: #363331;
+      }
+
+      #upper {
+        background: url(./pexels-pixabay-326281\ \(1\).jpg);
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 7%;
+        top: 8%;
+        z-index: 1;
+        height: 85vh;
+        width:85%
+      }
+
+      #form{
+        /* border: 1px solid red; */
+        box-sizing: border-box;
+        width: 30%;
+        height: 50vh;
+        margin-left: 50%;
+        margin-top: 10%;
+        background-color: #e4e4e6;
+        border-radius: 20px;
+      }
+      h1,h2{
+        color: #222222;
+      }
+      h1{
+        text-align: center;
+        padding-top:20px;
+        padding-bottom: 30px;
+      }
+
+      form{
+        text-align: center;
+        /* font-family: 'Kanit', sans-serif; */
+        font-family: 'Lato', sans-serif;
+        
+      }
+
+      form :nth-child(2), form :nth-child(4), form :nth-child(6){
+        border: none;
+        outline: none;
+        height: 40px;
+        width: 70%;
+        border-radius: 80px;
+        padding-left: 20px;
+      }
+
+      form :nth-child(6){
+        width: 73%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #F57328;
+      }
+      
+      form :nth-child(6):hover{
+        background-color:#cf3201;
+        color:#e7e0d8;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="background-color">
+      <div></div>
+      <div></div>
+    </div>
+
+    <div id="upper">
+      <div id="form">
+        <form>
+          <h1>Log in</h1>
+          <input type="email" placeholder="email"/>
+          <h2>or</h2>
+          <input type="number" placeholder="Phone number"/><br/>
+          <input type="submit" value="Log in"/><br/>
+          <a href="">Forgot Password ?</a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

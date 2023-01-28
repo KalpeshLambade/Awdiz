@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 7 Pract</title>
+  </head>
+  <link rel="icon" href="./download.jpg" />
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background-image: url(./pexels-pixabay-326281\ \(1\).jpg);
+      background-repeat: no-repeat;
+
+    }
+
+    p{
+        background-color: yellow;
+    }
+    h1,h2{
+        text-align: center;
+        color:white;
+    }
+    h2{
+        text-shadow: 0 0 8px violet, 0 0 8px red;
+    }
+
+    #max{
+        box-sizing: border-box;
+        width: 70%;
+        margin: auto;
+    }
+    #max >p{
+        border: 1px solid red;
+        margin: auto;
+        max-width: 50%;
+        opacity: 0.5;
+    }
+
+    #max >div{
+        border: 4px solid blue;
+        margin: auto;
+        box-shadow: 5px 10px 8px inset palevioletred;
+    }
+    #max >div:nth-child(2) >p{
+        background-color: palegoldenrod;
+        white-space: pre-line;
+        line-height: 32px;
+        letter-spacing: 4px;
+        word-spacing: 5px ; 
+    }
+
+    #ok {
+        width: 100%;
+        height: 20vh;
+        background-color: aqua;
+        
+    }
+    #ok >p{
+        max-width: 80%;
+    }
+  </style>
+  <body>
+    <div id="max">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut tristique et
+        egestas quis ipsum suspendisse ultrices gravida dictum. Sapien
+      </p>
+      <div>
+        <h1>Shadow</h1>
+        <h2>Text Shadow</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. <br/>Ut tristique et
+            egestas quis ipsum suspendisse ultrices gravida dictum. Sapien
+            pellentesque habitant morbi tristique. Velit laoreet id donec ultrices
+            tincidunt arcu. Morbi tincidunt augue interdum velit euismod in.<br/> Enim
+            sit amet venenatis urna. Penatibus et magnis dis parturient montes. A
+            condimentum vitae sapien pellentesque habitant morbi. Urna id volutpat
+            lacus laoreet non. Blandit volutpat maecenas volutpat blandit aliquam
+            etiam erat velit scelerisque.
+          </p>
+      </div>
+    </div>
+
+    <div id="ok">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. <br/>Ut tristique et
+            egestas quis ipsum suspendisse ultrices gravida dictum. Sapien
+            pellentesque habitant morbi tristique. Velit laoreet id donec ultrices
+            tincidunt arcu. Morbi tincidunt augue interdum velit euismod in.<br/> Enim
+            sit amet venenatis urna. Penatibus et magnis dis parturient montes. A
+            condimentum vitae sapien pellentesque habitant morbi. Urna id volutpat
+            lacus laoreet non. Blandit volutpat maecenas volutpat blandit aliquam
+            etiam erat velit scelerisque.
+          </p>
+    </div>
+  </body>
+</html>

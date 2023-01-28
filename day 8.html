@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space between</title>
+    <Style>
+        #topDiv,#bottomDiv,#midDiv{
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-around;
+        }
+        #topDiv >div,#bottomDiv >div, #midDiv>div{
+            border: 2px solid blue;
+            width: 100px;
+            height:80px;
+        }
+        #bottomDiv {
+            justify-content: space-evenly;
+        }
+        #midDiv{
+            justify-content: space-between;
+        }
+    </Style>
+</head>
+<body>
+    <div id="topDiv">
+        <div>1</div>
+        <div>space-around</div>
+        <div>3</div>
+    </div>
+    <div id="midDiv">
+        <div>1</div>
+        <div>space-between</div>
+        <div>3</div>
+    </div>
+    <div id="bottomDiv">
+        <div>1</div>
+        <div>space-evenly</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

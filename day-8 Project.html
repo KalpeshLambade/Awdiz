@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <script
+      src="https://kit.fontawesome.com/d98822fee5.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+            font-family: Roboto, Arial, sans-serif;
+        }
+        #navbar{
+            background-color: #2874f0;
+            width: 100%;
+            height: 57px;
+            color:white;
+            display: flex;
+            justify-content: space-evenly;
+            /* border: 1px solid red; */
+        }
+
+        #navbar > div{
+            display: flex;
+            /* border: 1px solid red; */
+        }
+
+        #logoDiv{
+            margin-right: 15px;
+            /* border: 1px solid red; */
+        }
+        #logoDiv>div:nth-child(1){
+            margin-top: 5px;
+        }
+        #logoDiv >div:nth-child(1)>a{
+            font-size: 22px;
+            font-weight: 800;
+        }
+        #logoDiv >div:nth-child(2)>a{
+            font-size: 12px;
+        }
+        #logoDiv >div:nth-child(2)>a>img{
+            width: 10px;
+            height: 10px;
+        }
+        #searchField{
+            background-color: white;
+            height: 37px;
+            width: 600px;
+            /* border: 1px solid red; */
+        }
+        #searchField > input{
+            border: none;
+            outline: none;
+            height: 100%;
+            width: 90%;
+            margin-left:3% ;
+            color: #b5b5b5;
+            font-size: 14px;
+        }
+        #searchField >i{
+            color:#2874f0;
+        }
+        #navbar > div:nth-child(1) > div:nth-child(2){
+            margin-top: 10px;
+        }
+        #rightSide{
+            display: flex;
+            width: 400px;
+            justify-content: space-around;
+            font-weight: 500;
+            /* border: 1px solid red; */
+        }
+        #rightSide > div{
+            height: 37px;
+            margin-top: 10px;
+            /* border: 1px solid red; */
+        }
+        #rightSide > div >p{
+            /* border: 1px solid red; */
+            margin-top: 7px;
+        }
+        #rightSide >div:nth-child(3) > i, span{
+            margin-top: 10px;
+        }
+        #rightSide >div:nth-child(4) > i, span{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <div id="logoDiv">
+                <div>
+                    <a><i>Flipkart</i></a>
+                </div>
+                <div>
+                    <a>Explore<span style="color:yellow">Pluse</span>
+                        <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" alt="Flipkart">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div id="searchField">
+                    <input type="text" placeholder="Search for Products, brand and more"/>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+        <div id="rightSide">
+            <div><p>Kalpesh</p></div>
+            <div><p>Become seller</p></div>
+            <div>
+                <span>More</span>
+                <i class="fa-solid fa-angle-down fa-s"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Cart</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
