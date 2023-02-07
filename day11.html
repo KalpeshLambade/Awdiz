@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebPage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #my-info{
+            height: 300px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #my-info-right, #my-info-left{
+            width: 40%;
+            /* border: 1px solid blue; */
+        }
+        #my-info-right >div{
+            height: 50%;
+            display: flex;
+            /* border: 0.5px solid grey; */
+        }
+        #my-info-right >div:first-child{
+            border-bottom: 0.5px solid grey;
+        }
+        #my-info-right >div >div{
+            width: 50%;
+            padding-top: 5%;
+            text-align: center;
+        }
+        #my-info-right >div >div:first-child{
+            border-right: 1px solid grey;
+        }
+        #my-info-right p{
+            margin-top: 8px;
+        }
+        #my-info-right h1{
+
+        }
+
+    </style>
+  </head>
+  <body>
+    <div id="my-info">
+      <div id="my-info-left"></div>
+      <div id="my-info-right">
+        <div>
+          <div>
+            <h1>22+</h1>
+            <p>Years of experience</p>
+          </div>
+          <div>
+            <h1>23+</h1>
+            <p>Years of experience</p>
+          </div>
+        </div>
+
+        <div>
+            <div>
+              <h1>22+</h1>
+              <p>Years of experience</p>
+            </div>
+            <div>
+              <h1>23+</h1>
+              <p>Years of experience</p>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </body>
+</html>

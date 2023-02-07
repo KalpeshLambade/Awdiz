@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quries</title>
+    <style>
+        #color{
+            height: 100px;
+            background-color: aqua;
+        }
+        #res-1{
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            border: 1px solid red;
+        }
+        #res-1 >div{
+            width: 30%;
+            background-color:blue;
+            color:white;
+        }
+        #res-2{
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            border: 1px solid blueviolet;
+        }
+        #res-2 >div{
+            width: 30%;
+            background-color:red;
+            color:white;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #res-2 >div >div{
+            width: 30%;
+            border: 1px solid white;
+        }
+
+        #my-div{
+            display: flex;
+            justify-content: space-evenly;
+            height: 100px;
+            border: 1px solid red;
+        }
+        #my-div >div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border: 1px solid blueviolet;
+            width: 20%;
+        }
+        #my-div >div >div{
+            border: 1px solid red;
+            height: 30%;
+        }
+
+        /* media quries */
+        @media screen and (max-width:500px) {
+            #color{
+            background-color: red;
+            }
+            #res-1,#res-2,#my-div{
+                flex-direction: column;  
+            }
+            #res-1 >div,#res-2 >div{
+                height: 30%;
+                width: 100%;
+                background-color:aqua;
+                color:red;
+            }
+            #res-2 >div >div{
+                /* height: 30%; */
+                background-color:pink;
+            }
+            #my-div >div{
+                flex-direction: row;
+            }
+            #my-div >div >div{
+                width: 30%;
+                height: 100%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="color"></div>
+    <div id="res-1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div id="res-2">
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="my-div">
+        <div>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <div>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <div>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <div>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+</body>
+</html>
