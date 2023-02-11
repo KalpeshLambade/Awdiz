@@ -8,7 +8,7 @@ else{
 }
 
 //Driving lic.
-var userAge = 21
+var userAge = 21;
 if(userAge >18){
     console.log("user is applicable");
 }
@@ -40,14 +40,14 @@ switch (ans) {
             break;
 
     case "nagpur":
-        console.log(`${ans} is not capital of maharashtra`)
+        console.log(`${ans} is not capital of maharashtra`);
         break;
 
     case "Pune":
-        console.log(`${ans} is not capital of maharashtra`)
+        console.log(`${ans} is not capital of maharashtra`);
         break;
 
     default:
-        console.log("Select Proper answer")
+        console.log("Select Proper answer");
         break;
 }
