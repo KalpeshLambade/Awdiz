@@ -10,11 +10,18 @@
       crossorigin="anonymous"
     ></script>
     <title>Day 22</title>
+    <style>
+      #row,#header{
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
   </head>
   <body>
     <h1>Home Page</h1>
     <input id="todosHere" placeholder="Type your todos ....." />
-    <h2 click="addTodo()">Submit Todos !</h2>
+    <h2 onclick="addTodo()">Submit Todos !</h2>
     <div id="displayTodos">
 
     </div>

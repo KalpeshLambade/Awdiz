@@ -9,6 +9,7 @@ function addTodo(){
         myTodosFromLS.push(gettingTodos);
         localStorage.setItem("todos" , JSON.stringify(myTodosFromLS));
         document.getElementById('todosHere').value = "";
+        cs();
         alert("Todo Added");
 
     }
@@ -24,7 +25,7 @@ function cs() {
   var divFromHtml = document.getElementById("displayTodos");
 
   var gettingTodosFromLS = JSON.parse(localStorage.getItem("todos"));
-  console.log(gettingTodosFromLS, "gettingTodos");
+  // console.log(gettingTodosFromLS, "gettingTodos");
 
   var finalStructure = [`<div id="header"><p>Todos</p><p>Completed</p></div>`];
 
@@ -39,6 +40,7 @@ function cs() {
         <p>${gettingTodosFromLS[i]}</p>
         <i class="fa-solid fa-trash-can" onclick="deleteToDo(${i})"></i>
         </div> `; //passing structure into the array
+
   }
 
   // console.log(finalStructure ,"finalStructure");
